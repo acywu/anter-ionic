@@ -1,0 +1,42 @@
+
+<ion-view view-title="">
+  <ion-content class="signin-page app-bg" scroll="true" >
+
+    <img ng-src="./img/ant-512.png" class="logo-image">
+
+
+    <div class="list card">
+
+      <label class="item item-input username item-input-right item-icon-left">
+        <i class="icon ion-email"></i>
+        <span class="input-label">　　Email</span>
+        <input type="text"  ng-model="user.email"></input>
+      </label>
+
+      <label class="item item-input lock item-input-right item-icon-left">
+        <i class="icon ion-key"></i>
+        <span class="input-label">　　Password</span>
+        <input type="password" ng-model="user.password"></input>
+      </label>
+
+      <!--
+      <ion-checkbox ng-checked="true" ng-model="user.rmbmeisChecked">{{ 'signin_rmb_logininfo' | translate }}</ion-checkbox>-->
+
+    <button class="button button-full button-dark" ng-click="navigateTo('tab.getlist')">
+      Sign in
+    </button>
+
+  </div>
+
+  <div class="list card">
+
+  <button class="button button-block button-dark" href="#/tab/dash">
+    Sign Up
+  </button>
+
+
+</div>
+
+
+  </ion-content>
+</ion-view>
